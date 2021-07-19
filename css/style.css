@@ -14,43 +14,14 @@ body {
   padding: 30px;
 }
 
-/* NEW GRID*/
-.containerGrid {
-display: grid;
-height: 500px;
-justify-content: center;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-grid-template-areas: 
-  "topRow topRow topRow"
-  " leftSidebar rightContent rightContent";
-}
-.row{
-  padding: 10px;
-}
-
-.topRow {
-  grid-area: topRow;
-  justify-content: center;
-}
-.leftSidebar {
-  grid-area: leftSidebar;
-  padding-top: -10;
-;
-}
-.rightContent {
-  grid-area: rightContent;
-}
-
 /* Category Grid CSS */
 
 .subHeading {
   text-align: center;
-  border-bottom: 2px solid black;
-  width: 300px;
+  border-bottom: 1px solid rgb(124, 123, 123);
+  width: 200px;
   margin: 50px auto;
 }
-
 
 .right {
   padding: 15px;
@@ -61,30 +32,29 @@ grid-template-areas:
 /* Navigation CSS */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
 
-#navBar {
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  margin: 0px 5%;
-  background-color: #56A9AF;
-  overflow: hidden;
+
+
+.navbar {
+  background-color: #56A9AF !important;
+}
+
+.customNav  {
+  background-color: #56A9AF !important;
 }
 
 #navBar h1 {
   width: 50%;
   font-weight: 300;
-  padding-left: 25px;
+  padding-left: 40px;
   color: #fff;
 }
 
 #navigation {
-  display: flex;
-  width: 50%;
-  text-align: float-end;
-  justify-content: space-evenly;
-  padding-top: 10px;
+  width: 20%;
+  padding-top: 20px;
   color: #fff;
 }
+
 #navigation p {
   cursor: pointer;
   text-decoration: none;
@@ -127,3 +97,12 @@ h4 {
   color: #636364;
 }
 
+.btn {
+  background-color: #56A9AF;
+  border: #636364;
+}
+
+.footerBar {
+  size: 100%;
+  color: #56A9AF;
+}
